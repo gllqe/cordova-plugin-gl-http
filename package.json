@@ -1,9 +1,9 @@
 {
-  "name": "gl-plugin-http",
+  "name": "codova-plugin-gl-http",
   "version": "1.0.0",
   "description": "\r\n    This plugin allows you to create httpequest.\r\n  ",
   "cordova": {
-    "id": "gl-plugin-http",
+    "id": "codova-plugin-gl-http",
     "platforms": [
       "android"
     ]
