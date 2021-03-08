@@ -1,0 +1,17 @@
+{
+  "name": "gl-plugin-http",
+  "version": "1.0.0",
+  "description": "\r\n    This plugin allows you to create httpequest.\r\n  ",
+  "cordova": {
+    "id": "gl-plugin-http",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "gl",
+  "license": "ISC"
+}

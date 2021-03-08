@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="codova-plugin-gl-http"
+        version="1.0.0">
+
+  <name>HttpWeb</name>
+
+  <description>
+    This plugin allows you to create httpequest.
+  </description>
+
+ 
+  <js-module src="www/HttpWeb.js" name="HttpWeb">
+    <clobbers target="HttpWeb" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="HttpWeb">
+        <param name="android-package" value="gl.plugins.HttpWeb" />
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/HttpWeb.java" target-dir="src/gl/plugins"/>
+
+    <config-file target="AndroidManifest.xml" parent="/*">
+      <uses-permission android:name="android.permission.INTERNET" />
+    </config-file>
+    
+  </platform> 
+</plugin>
